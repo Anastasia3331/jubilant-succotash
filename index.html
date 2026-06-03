@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Политехнический музей — БЭСМ-6</title>
+
+<style>
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2f9, #f7f9ff);
+    color: #1d1d1d;
+}
+
+header{
+    background: #1f3b73;
+    color: white;
+    padding: 18px;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+    font-size: 26px;
+}
+
+.container{
+    max-width: 950px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card{
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.description{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+/* кнопки */
+button{
+    margin-top: 12px;
+    background: #1f3b73;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #2f5fb3;
+}
+
+/* аудио */
+audio{
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* разделитель */
+hr{
+    margin: 45px 0;
+}
+
+/* =========================
+   СЛАБОВИДЯЩИЕ
+========================= */
+
+.accessibility-box{
+    background: #f0f6ff;
+    border-left: 6px solid #1f3b73;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.accessibility-box h2{
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.accessibility-text{
+    font-size: 20px;
+    line-height: 2;
+}
+
+/* подсветка при переходе */
+.highlight{
+    box-shadow: 0 0 25px rgba(31,59,115,0.4);
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Политехнический музей — БЭСМ-6</h1>
+</header>
+
+<div class="container">
+
+<!-- =========================
+     ОСНОВНАЯ КАРТОЧКА
+========================= -->
+
+<div class="card">
+
+<h2>БЭСМ-6 — советский суперкомпьютер</h2>
+
+<img src="besm6.jpg" alt="Суперкомпьютер БЭСМ-6">
+
+<!-- 🔥 ТВОЙ ПОЛНЫЙ ОСНОВНОЙ ТЕКСТ (БЕЗ СОКРАЩЕНИЙ) -->
+<div class="description">
+
+Представьте себе суперкомпьютер, который в конце 1960-х годов был настоящим чудом инженерной мысли — без цветных экранов, тачскринов и компактных микросхем, но способный решать сложнейшие задачи!
+БЭСМ-6 (Большая электронная счётная машина) — гордость советской науки и, по мнению многих экспертов, лучший отечественный суперкомпьютер. Он работал с 1968 по 1983 год и был настолько мощным, что его использовали для расчётов космических миссий, моделирования физических процессов и оборонных задач.
+Эта гигантская машина занимала целую комнату, гудела вентиляторами и мигала сотнями индикаторов. При этом её производительность достигала 1 миллиона операций в секунду — показатель, сопоставимый с самыми передовыми зарубежными аналогами того времени. БЭСМ-6 стала основой для создания вычислительных центров по всему СССР и долгие годы служила науке, помогая учёным делать открытия, которые казались почти фантастикой.
+
+</div>
+
+<!-- обычный MP3 аудиогид -->
+<h3>Аудиогид</h3>
+
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="goToAccessibility()">♿ Версия для слабовидящих</button>
+
+</div>
+
+<hr>
+
+<!-- =========================
+     СЛАБОВИДЯЩИЕ (БЕЗ СОКРАЩЕНИЙ)
+========================= -->
+
+<div id="accessibility" class="accessibility-box">
+
+<h2>Версия для слабовидящих</h2>
+
+<div class="accessibility-text">
+
+БЭСМ-6 — первый советский суперкомпьютер, созданный под руководством академика С. А. Лебедева. Выпускался с 1968 по 1983 год.
+
+Машина выполняла около 1 млн операций в секунду — это был один из самых высоких показателей в Европе того времени. Собранная на 60 тысячах транзисторов и 180 тысячах диодов (без интегральных схем), она использовала вычислительный конвейер, позволявший обрабатывать до 14 команд одновременно.
+
+БЭСМ-6 применяли для расчётов космических программ (включая «Союз-Аполлон»), моделирования физических процессов, задач обороны, метеорологии и проектирования. Всего выпустили 355 машин — они стали основой вычислительных центров в СССР и повлияли на развитие последующих поколений советских ЭВМ.
+
+<
+
+
+</div>
+
+</div>
+
+<script>
+
+/* переход к слабовидящим */
+function goToAccessibility(){
+
+    const block = document.getElementById("accessibility");
+
+    block.scrollIntoView({ behavior: "smooth" });
+
+    block.classList.add("highlight");
+
+    setTimeout(()=>{
+        block.classList.remove("highlight");
+    }, 1500);
+}
+
+</script>
+
+</body>
+</html>/div>
