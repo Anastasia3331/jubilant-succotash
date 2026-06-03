@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Политехнический музей — БЭСМ-6</title>
+
+<!-- 🏛 музейный шрифт (максимально близкий к TT Livret по стилю) -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   ОБЩИЙ МУЗЕЙНЫЙ ФОН
+========================= */
+
+body{
+    margin: 0;
+
+    /* ЕДИНЫЙ МУЗЕЙНЫЙ ШРИФТ ВЕЗДЕ */
+    font-family: "Cormorant Garamond", serif;
+
+    background:
+        radial-gradient(circle at top, #e9eef6, #cfd8e6, #bfc9d8);
+
+    color: #1b1b1b;
+}
+
+/* =========================
+   ШАПКА
+========================= */
+
+header{
+    background: rgba(20,40,80,0.85);
+    backdrop-filter: blur(10px);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* =========================
+   КОНТЕЙНЕР
+========================= */
+
+.container{
+    max-width: 950px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* =========================
+   GLASS КАРТОЧКА
+========================= */
+
+.card{
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(18px);
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   ВСЕ ЗАГОЛОВКИ
+========================= */
+
+h2, h3{
+    font-weight: 700;
+    font-size: 26px;
+}
+
+/* =========================
+   ОСНОВНОЙ ТЕКСТ
+========================= */
+
+.description{
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 400;
+}
+
+/* =========================
+   КНОПКА
+========================= */
+
+button{
+    margin-top: 12px;
+    background: rgba(20,40,80,0.9);
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit; /* 🔥 ВАЖНО: тот же музейный шрифт */
+}
+
+button:hover{
+    background: rgba(40,70,140,0.95);
+}
+
+/* =========================
+   КАРТИНКА
+========================= */
+
+img{
+    width: 100%;
+    border-radius: 14px;
+}
+
+/* =========================
+   АУДИО
+========================= */
+
+audio{
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* =========================
+   СЛАБОВИДЯЩИЕ
+========================= */
+
+.accessibility-box{
+    margin-top: 40px;
+    background: rgba(255,255,255,0.45);
+    backdrop-filter: blur(14px);
+    border-left: 6px solid #1f3b73;
+    border-radius: 14px;
+    padding: 22px;
+}
+
+/* 🔥 ВАЖНО: тот же шрифт, просто жирнее */
+.accessibility-text{
+    font-size: 22px;
+    line-height: 2.2;
+    font-weight: 700;
+    font-family: inherit; /* тот же музейный шрифт */
+}
+
+/* =========================
+   ПОДСВЕТКА ПЕРЕХОДА
+========================= */
+
+.highlight{
+    box-shadow: 0 0 30px rgba(31,59,115,0.4);
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Политехнический музей — БЭСМ-6</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>БЭСМ-6 — советский суперкомпьютер</h2>
+
+<img src="besm6.jpg" alt="Суперкомпьютер БЭСМ-6">
+
+<div class="description">
+
+Представьте себе суперкомпьютер, который в конце 1960-х годов был настоящим чудом инженерной мысли — без цветных экранов, тачскринов и компактных микросхем, но способный решать сложнейшие задачи!
+БЭСМ-6 (Большая электронная счётная машина) — гордость советской науки и, по мнению многих экспертов, лучший отечественный суперкомпьютер. Он работал с 1968 по 1983 год и был настолько мощным, что его использовали для расчётов космических миссий, моделирования физических процессов и оборонных задач.
+Эта гигантская машина занимала целую комнату, гудела вентиляторами и мигала сотнями индикаторов. При этом её производительность достигала 1 миллиона операций в секунду — показатель, сопоставимый с самыми передовыми зарубежными аналогами того времени. БЭСМ-6 стала основой для создания вычислительных центров по всему СССР и долгие годы служила науке, помогая учёным делать открытия, которые казались почти фантастикой.
+
+<
+
+
+h3>Аудиогид</h3>
+
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="goToAccessibility()">♿ Версия для слабовидящих</button>
+
+</div>
+
+<hr>
+
+<div id="accessibility" class="accessibility-box">
+
+<h2>Версия для слабовидящих</h2>
+
+<div class="accessibility-text">
+
+БЭСМ-6 — первый советский суперкомпьютер, созданный под руководством академика С. А. Лебедева. Выпускался с 1968 по 1983 год.
+
+Машина выполняла около 1 млн операций в секунду — это был один из самых высоких показателей в Европе того времени. Собранная на 60 тысячах транзисторов и 180 тысячах диодов (без интегральных схем), она использовала вычислительный конвейер, позволявший обрабатывать до 14 команд одновременно.
+
+БЭСМ-6 применяли для расчётов космических программ (включая «Союз-Аполлон»), моделирования физических процессов, задач обороны, метеорологии и проектирования. Всего выпустили 355 машин — они стали основой вычислительных центров в СССР и повлияли на развитие последующих поколений советских ЭВМ.
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function goToAccessibility(){
+
+    const block = document.getElementById("accessibility");
+
+    block.scrollIntoView({ behavior: "smooth" });
+
+    block.classList.add("highlight");
+
+    setTimeout(()=>{
+        block.classList.remove("highlight");
+    }, 1500);
+}
+
+</script>
+
+</body>
+</html>
