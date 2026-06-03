@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Музей вычислительной техники — БЭСМ-6</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f7fb;
+    color: #222;
+}
+
+/* верхняя панель */
+header{
+    background: #1f3b73;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+    font-size: 28px;
+}
+
+/* контейнер */
+.container{
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* карточка экспоната */
+.card{
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* изображение */
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* обычный текст */
+.description{
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* аудио */
+audio{
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* кнопка */
+button{
+    background: #1f3b73;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover{
+    background: #2f5fb3;
+}
+
+/* ========================= */
+/* 🔵 РЕЖИМ СЛАБОВИДЯЩИХ */
+/* ========================= */
+
+.accessibility-mode body{
+    background: #ffffff;
+}
+
+/* увеличенный текст */
+.accessibility-mode .description{
+    font-size: 24px;
+    line-height: 1.9;
+}
+
+/* карточка становится более контрастной */
+.accessibility-mode .card{
+    border: 3px solid #2f5fb3;
+}
+
+/* таблица/блок */
+.accessibility-box{
+    margin-top: 30px;
+    padding: 20px;
+    background: #f0f6ff;
+    border-left: 6px solid #2f5fb3;
+    border-radius: 10px;
+}
+
+.accessibility-box h2{
+    margin-top: 0;
+    font-size: 26px;
+    color: #1f3b73;
+}
+
+/* таблица */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+th{
+    background: #1f3b73;
+    color: white;
+    text-align: left;
+    padding: 12px;
+}
+
+td{
+    padding: 12px;
+    border-bottom: 1px solid #d9e2f3;
+}
+
+/* увеличенный режим таблицы */
+.accessibility-mode table{
+    font-size: 22px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Музей вычислительной техники</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>БЭСМ-6 — советский суперкомпьютер</h2>
+
+<img src="besm6.jpg" alt="Суперкомпьютер БЭСМ-6">
+
+<div class="description">
+БЭСМ-6 (Большая электронная счётная машина) — один из самых мощных советских компьютеров 1960-х годов.
+
+Она использовалась для научных вычислений, космических программ и моделирования сложных физических процессов.
+
+Машина занимала целую комнату и выполняла до 1 миллиона операций в секунду.
+</div>
+
+<h3>Аудиогид</h3>
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="toggleAccessibility()">🔵 Режим для слабовидящих</button>
+
+</div>
+
+<!-- 🔵 БЛОК ДОСТУПНОСТИ -->
+<div class="accessibility-box">
+
+<h2>Версия для слабовидящих</h2>
+
+<table>
+<tr>
+    <th>Параметр</th>
+    <th>Описание</th>
+</tr>
+
+<tr>
+    <td>Название</td>
+    <td>БЭСМ-6 (Большая электронная счётная машина)</td>
+</tr>
+
+<tr>
+    <td>Период</td>
+    <td>1968–1983</td>
+</tr>
+
+<tr>
+    <td>Назначение</td>
+    <td>Научные вычисления, космос, оборона, моделирование</td>
+</tr>
+
+<tr>
+    <td>Особенности</td>
+    <td>Занимала целую комнату, использовала лампово-транзисторную технологию</td>
+</tr>
+
+<tr>
+    <td>Производительность</td>
+    <td>До 1 000 000 операций в секунду</td>
+</tr>
+
+<tr>
+    <td>Значение</td>
+    <td>Одна из самых мощных ЭВМ своего времени в СССР</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<!-- 🔵 СКРИПТ ПЕРЕКЛЮЧЕНИЯ -->
+<script>
+function toggleAccessibility(){
+    document.body.classList.toggle("accessibility-mode");
+}
+</script>
+
+</body>
+</html>
