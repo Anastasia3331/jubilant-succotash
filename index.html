@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Интерактивная музейная карточка</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.6;
+    background: #ffffff;
+}
+
+h1{
+    font-size: 36px;
+}
+
+.description{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Аудио */
+audio{
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* 🔵 БЛОК ДОСТУПНОСТИ (мягкий, НЕ чёрный) */
+.accessibility{
+    margin-top: 40px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7ff, #eef6ff);
+    border-left: 6px solid #4a90e2;
+    border-radius: 12px;
+}
+
+.accessibility h2{
+    margin-top: 0;
+    color: #1f4fa3;
+    font-size: 26px;
+}
+
+.accessibility p{
+    font-size: 20px;
+    line-height: 1.8;
+}
+</style>
+</head>
+
+<body>
+
+<h1>БЭСМ-6 — советский суперкомпьютер</h1>
+
+<img src="besm6.jpg" alt="Суперкомпьютер БЭСМ-6">
+
+<div class="description">
+БЭСМ-6 — один из самых мощных советских компьютеров, созданный в 1960-х годах.
+Он использовался для научных расчётов, моделирования и космических программ.
+</div>
+
+<h2>Аудиогид</h2>
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<!-- 🔵 ОПИСАНИЕ ДЛЯ СЛАБОВИДЯЩИХ ВНИЗУ -->
+<div class="accessibility">
+
+<h2>Описание для слабовидящих</h2>
+
+<p>
+Представьте себе суперкомпьютер конца 1960-х годов — огромную вычислительную машину без экранов и современных микросхем.
+
+БЭСМ-6 была гордостью советской науки и использовалась для сложных расчётов в космосе, физике и оборонной сфере.
+
+Она занимала целую комнату, работала с громким шумом вентиляторов и мигающими индикаторами.
+
+Несмотря на размеры, машина выполняла до 1 миллиона операций в секунду и считалась одной из самых мощных в мире своего времени.
+
+БЭСМ-6 стала важным шагом в развитии вычислительной техники в СССР.
+</p>
+
+</div>
+
+</body>
+</html>
